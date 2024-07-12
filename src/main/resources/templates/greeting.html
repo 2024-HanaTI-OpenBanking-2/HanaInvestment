@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>securities_account</title>
+</head>
+<body>
+<h1>securities_account</h1>
+<table>
+  <thead>
+  <tr>
+    <th>ci</th>
+    <th>account_info</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="record : ${records}">
+    <td th:text="${record.ci}">1</td> <!-- ID 컬럼 값 -->
+    <td th:text="${record.name}">Name</td> <!-- Name 컬럼 값 -->
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
