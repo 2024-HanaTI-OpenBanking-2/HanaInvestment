@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "securities_account")
+@Table(name = "test_securities_account")
 public class TestTable2 {
 
   @Id

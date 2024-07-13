@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/allaccount")
+@RequestMapping("/accountinfo")
 public class AccountController {
 
   private final TestTable2Service testTable2Service;
@@ -20,7 +20,7 @@ public class AccountController {
     this.testTable2Service = testTable2Service;
   }
 
-  @GetMapping("/checkBalance")
+  @GetMapping("/list")
   public ResponseEntity<AccountResponseDTO> checkBalance(@RequestParam int ci) {
     return ResponseEntity.ok(testTable2Service.checkBalance(ci));
   }
