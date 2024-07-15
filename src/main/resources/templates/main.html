@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="/css/index.css" />
+  <meta charset="UTF-8">
+  <title>Hana Securities Main Page</title>
+  <link rel="stylesheet" href="/css/styles.css">
   <script src="/js/scripts.js" defer></script>
 </head>
 <body>
@@ -17,8 +18,6 @@
   <div class="text-wrapper-4">국내주식</div>
   <button class="text-wrapper-5" onclick="loadBalances()">내자산</button>
   <div class="chart-wrapper" id="balances">
-    <div class="overlap-2">
-    </div>
     <!-- Balances will be loaded here -->
   </div>
 </div>

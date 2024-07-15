@@ -545,3 +545,10 @@
   font-size: 16px;  /* Larger font size */
   cursor: pointer;  /* Cursor pointer to indicate it's clickable */
 }
+.balance-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
