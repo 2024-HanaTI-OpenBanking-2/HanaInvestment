@@ -1,9 +1,12 @@
 package hanasecurities.hanasecurities.dto;
 
 import java.math.BigDecimal;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
+@AllArgsConstructor
 public class AccountInfoDto {
 
   private String accountId;
@@ -11,14 +14,6 @@ public class AccountInfoDto {
   private String accountNumber;
   private BigDecimal cash;
   private BigDecimal totalAssets;
-
-  public AccountInfoDto(String accountId, String financialCompany, String accountNumber, BigDecimal cash, BigDecimal totalAssets) {
-    this.accountId = accountId;
-    this.financialCompany = financialCompany;
-    this.accountNumber = accountNumber;
-    this.cash = cash;
-    this.totalAssets = totalAssets;
-  }
 
   // Getters and Setters
 }

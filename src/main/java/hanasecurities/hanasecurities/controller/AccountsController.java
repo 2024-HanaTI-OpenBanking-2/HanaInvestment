@@ -1,7 +1,9 @@
 package hanasecurities.hanasecurities.controller;
 
+import hanasecurities.hanasecurities.dto.AccountCiResponseDTO;
 import hanasecurities.hanasecurities.dto.AccountInfoDto;
 import hanasecurities.hanasecurities.service.AccountService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,7 +24,9 @@ public class AccountsController {
   }
 
   @PostMapping("/list")
-  public List<AccountInfoDto> getAccountList(@RequestParam String ci) {
-    return accountService.findAccountsByCi(ci);
+  public ResponseEntity<List<AccountInfoDto>> getAccountList(@RequestBody AccountCiResponseDTO accountCiResponseDTO) {
+    List<AccountInfoDto> response = accountService.findAccountsByCi(accountCiResponseDTO.getCi());
+    return ResponseEntity.ok(response);
   }
+
 }
