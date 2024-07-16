@@ -1,6 +1,6 @@
 package hanasecurities.hanasecurities.repository;
 
-import hanasecurities.hanasecurities.dto.BankAccountDTO;
+
 import hanasecurities.hanasecurities.entity.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 

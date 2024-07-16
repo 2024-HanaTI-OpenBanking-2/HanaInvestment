@@ -13,6 +13,7 @@ public class SecuritiesBalanceDTO {
   private BigDecimal fluctuationRate;
   private BigDecimal evaluationProfitLoss;
   private String stockCode;
+  private String stockName;
 
   // Getters and Setters
 }

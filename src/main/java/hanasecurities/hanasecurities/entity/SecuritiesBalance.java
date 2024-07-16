@@ -9,7 +9,7 @@ import lombok.Data;
 @Data
 @Table(name = "securities_balances")
 public class SecuritiesBalance {
-  @Id
+
   @Column(name = "account_id", length = 200, nullable = false)
   private String accountId;
 
@@ -25,8 +25,11 @@ public class SecuritiesBalance {
   @Column(name = "evaluation_profit_loss", precision = 10, scale = 2)
   private BigDecimal evaluationProfitLoss;
 
+  @Id
   @Column(name = "stock_code", length = 20, nullable = false)
   private String stockCode;
 
+  @Column(name = "prdt_name", length = 200, nullable = false)
+  private String stockName;
   // Getters and Setters
 }

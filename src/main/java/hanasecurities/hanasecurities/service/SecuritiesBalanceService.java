@@ -30,6 +30,7 @@ public class SecuritiesBalanceService {
     dto.setFluctuationRate(balance.getFluctuationRate());
     dto.setEvaluationProfitLoss(balance.getEvaluationProfitLoss());
     dto.setStockCode(balance.getStockCode());
+    dto.setStockName(balance.getStockName());
     return dto;
   }
 }
