@@ -62,7 +62,7 @@ function loadChart() {
       data: {
         labels: stockNames,
         datasets: [{
-          label: 'Current Quantity',
+          label: 'Stock Current Quantity',
           data: currentQuantities,
           backgroundColor: backgroundColors,
           borderColor: 'rgba(0,0,0,0.1)',
