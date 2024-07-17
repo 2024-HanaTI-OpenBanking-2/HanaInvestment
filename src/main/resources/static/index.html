@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="/css/index.css" />
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="/css/index.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <script src="/js/scripts.js" defer></script>
   <title>하나증권</title>
 </head>
 <body>
 <div class="hanasecurities">
   <div class="overlap-group">
+    <img class="logo" src="/img/hanalogo.png" alt="하나증권로고"/>
     <div class="div">HanaSecurities</div>
-    <div class="text-wrapper-2">logo</div>
-    <button class="button logout-button">로그아웃</button>
-    <div class="text-wrapper-3">오승민님<br /><br />안녕하세요, 반갑습니다.</div>
   </div>
-  <img class="line" src="img/line-12.svg" />
-  <button class="text-wrapper-4"><a class="move-flask" href="http://13.125.156.239:5000/">국내주식</a></button>
-  <button class="text-wrapper-5" onclick="loadBalances()">내자산</button>
+  <div class="side-bar">
+    <button class="button logout-button">로그아웃</button>
+    <div class="gray-line"></div>
+    <div class="text-wrapper-3"><span style="font-size: 20px;">오승민님</span><br/><br/>안녕하세요, 반갑습니다.</div>
+    <button class="text-wrapper-4"><i class="fa-solid fa-chart-line" style="margin-right: 5px"></i><a class="move-flask" href="http://13.125.156.239:5000/">국내주식</a></button>
+    <button class="text-wrapper-5" onclick="loadBalances()"><i class="fa-solid fa-hand-spock"style="margin-right: 11px"></i>내자산</button>
+  </div>
   <div class="chart-wrapper" id="balances">
-    <div class="overlap-2">
-    </div>
     <!-- Balances will be loaded here -->
   </div>
 </div>
+
 </body>
 </html>
