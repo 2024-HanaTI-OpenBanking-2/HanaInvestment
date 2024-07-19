@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Hana Securities Main Page</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/scripts.js" defer></script>
+</head>
+<body>
+<div class="hanasecurities">
+  <div class="overlap-group">
+    <div class="div">HanaSecurities</div>
+    <div class="text-wrapper-2">logo</div>
+    <button class="button logout-button">로그아웃</button>
+    <div class="text-wrapper-3">오승민님<br /><br />안녕하세요, 반갑습니다.</div>
+  </div>
+  <img class="line" src="img/line-12.svg" />
+  <div class="text-wrapper-4">국내주식</div>
+  <button class="text-wrapper-5" onclick="loadBalances()">내자산</button>
+  <div class="chart-wrapper" id="balances">
+    <!-- Balances will be loaded here -->
+  </div>
+</div>
+</body>
+</html>
